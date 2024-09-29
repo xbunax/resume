@@ -17,7 +17,7 @@
 	
 		
 	
-	<title itemprop="name">Resume | MERT BAKIR</title>
+	<title itemprop="name">Resume | ZhuMo</title>
 </head>
 
 <body>
@@ -29,51 +29,70 @@
 			<header class="flex-row">
 				<div class="title">
 	
-		<h1 class="name">Mert Bakir</h1>
-		<h2 class="tagline">Data Scientist</h2>
+		<h1 class="name">Zhu Mo</h1>
+		<h2 class="tagline"></h2>
+		
+			
+    <span class="contact"><a href="mailto:zm1171218417@outlook.com" class="no-external-icon"><i class="fas fa-envelope"></i> zm1171218417@outlook.com</a></span><span class="contact-links"><a href="https://gitlab.com/xbunax/" class="no-external-icon"><i class="fa-brands fa-github"></i> github</a></span>
 		
 	
 </div>
 	
 
-	<div class="title">
-	
-    <span class="contact"><i class="fas fa-tty"></i> 5070*4****<br><a href="mailto:yourmail@yourdomain" class="no-external-icon"><i class="fas fa-envelope"></i> yourmail@yourdomain</a></span>
-	</div>
+<div><img class="avatar right" src="cat.jpg"></div>
 
 			</header><div class="left-column">
 				
 					<div class="section section-about"><h1 class="section-title">About Me</h1>
 
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare sollicitudin fringilla.
-Aenean nec volutpat arcu. Maecenas quis tempus risus. Curabitur condimentum ligula in erat pharetra porta.</p>
-<p>Nam suscipit nisi a bibendum lacinia.</p>
-
+	<p>本人毕业于同济大学理论物理专业，研究方向微磁学模拟，对科学计算与HPC有很大的兴趣，现在逐渐对神经网络与自旋电子学的交叉方向有所研究。
+同时本人对开源社区有很大热情，Arch Linux与neovim爱好者，作为contributor之一参与过TJ-CSCCG项目。</p>
 
 
 </div>
 
 				
-					<div class="section section-experience"><h1 class="section-title">Experience</h1>
-
-<div class="item group">
-	<h2 class="item-title">Company 1</h2>
-	
-	<div class="item">
-		<div class="flex-row">
-			<span class="job-title">Data Scientist</span>
-			<span class="soft-color">10.2020 -  Present</span>
-		</div>
-
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare sollicitudin fringilla.
-Aenean nec volutpat arcu. Maecenas quis tempus risus. Curabitur condimentum ligula in erat pharetra porta.
-Nam suscipit nisi a bibendum lacinia. Donec aliquet, nibh dignissim placerat efficit</p>
-
-
+					<div class="section section-projects"><h1 class="section-title">Projects</h1>
+<div class="item">
+	<h2 class="item-title">
 		
-	</div>
+		微磁学模拟软件</h2>
+	<span>C, Python, Makefile, CUDA, Shell, Django - 2023-09 ~ 2024-01</span>
+	
+
+	<p>基于C语言利用Makefile进行跨平台编译，使用有限差分法编写微磁学模拟软件，并使用Python进行数据处理</p>
+<ul>
+<li>在原有程序基础上进行二次开发，基于有限差分法模拟，能够进行DMI效应的计算，成功实现了对SOT无场翻转的模拟</li>
+<li>使用CUDA实现数据并行，编写kernel函数，实现矩阵基础运算，大幅加快矩阵计算速度，提高了模拟效率</li>
+<li>使用<code>Python</code>脚本实现了数据自动处理，利用<code>ssh</code>与远程服务器通信，实现了数据自动上传下载</li>
+<li>使用<code>shell</code>脚本实现计算任务的自动提交，并使用<code>post</code>请求与<code>pushdear</code>实现计算完成时的消息推送</li>
+<li>使用<code>Django</code>框架搭建webUI，实现了模拟程序的可视化操作</li>
+<li>将函数库编译成动态库，并且利用<code>cython</code>打包成<code>Python</code>模块，实现了<code>Python</code>对模拟程序调用</li>
+</ul>
+
+
 	
 </div>
+
+<div class="item">
+	<h2 class="item-title">
+		
+		<a class="no-external-icon" href="github.com/xbunax/cif2ucf">cif2ucf</a></h2>
+	<span>Python, Numpy, ASE, Git - 2024</span>
+	
+
+	<p>使用Python读取cif文件获取晶格信息，利用<code>Numpy</code>计算出扩包后中心晶格的近邻原子相对位置，从而自动生成计算所需的配置文件</p>
+<ul>
+<li>使用ASE库解包cif晶格文件获取原子位置信息并进行编号，并通过<code>init_structure</code>方法根据参数自动设置原子的各个属性，完成晶格的初始化</li>
+<li>使用Numpy的boardcast方法计算获取distance
+matrix，据此获取近邻原子的相对位置与编号，之后使用<code>writeucf</code>方法自动生成计算配置文件，极大提升效率</li>
+<li>将项目push到GitHub并遵循BSD开源协议，并向原计算软件作者提出issue，完善后可被merge</li>
+</ul>
+
+
+	
+</div>
+
 </div>
 
 				
@@ -83,18 +102,8 @@ Nam suscipit nisi a bibendum lacinia. Donec aliquet, nibh dignissim placerat eff
 				
 					<div class="section section-languages"><h1 class="section-title">Languages</h1>
 <div class="item">
-	<h2 class="item-title">Turkish<span> - Native</span>
+	<h2 class="item-title">English<span> - Normal</span>
 	</h2>
-	
-</div>
-
-<div class="item">
-	<h2 class="item-title">English<span> - Professional</span>
-	</h2>
-	
-	<li>YDS: 86.25 - 2018</li>
-	
-	<li>TOEFL: 109 - 2021</li>
 	
 </div>
 
@@ -104,14 +113,14 @@ Nam suscipit nisi a bibendum lacinia. Donec aliquet, nibh dignissim placerat eff
 					<div class="section section-skills"><h1 class="section-title">Skills</h1><div class="item">
 		<dl>
 			
-			<dt>Databases &amp; Visualization</dt>
-			<dd><span>grafana - kibana - powerbi</span><span>influxdb - tick stack</span></dd>
+			<dt>Operate System</dt>
+			<dd><span>linux</span><span>macos</span></dd>
 			
-			<dt>Data Analysis &amp; Analytics</dt>
-			<dd><span>python - r - sql</span><span>excel - minitab - spss</span><span>gams - pulp - or tools</span></dd>
+			<dt>Code Languages</dt>
+			<dd><span>python</span><span>c/cpp</span><span>shell</span><span>matlab</span><span>cuda</span></dd>
 			
-			<dt>Programming &amp; Systems</dt>
-			<dd><span>c# - git - docker - nginx</span><span>linux - centos rhel</span></dd>
+			<dt>Tools</dt>
+			<dd><span>neovim</span><span>django</span><span>anaconda</span><span>tmux</span><span>typst</span><span>latex</span><span>docker</span></dd>
 			
 		</dl>
 	</div></div>
@@ -131,29 +140,33 @@ Nam suscipit nisi a bibendum lacinia. Donec aliquet, nibh dignissim placerat eff
 
 
 
-<div class="item"><h2 class="item-title">Yildiz Technical University</h2><span>Msc. Industrial Engineering</span><br>
+<div class="item"><h2 class="item-title">Tongji University</h2><span>Theoretical Physics</span><br>
 	
 
-	<span>2019- 2021 | GPA: 3.71 / 4.00</span><br><span><a class="no-external-icon" href="https://...">with Thesis</a></span>
-			<i class="fas fa-link"></i><br>
+	<span>2022- 2025</span>
 
-	<p>Include details if you like to&hellip;</p>
+	<p>Master degree</p>
 
 
 	
 </div>
 
-<div class="item"><h2 class="item-title">Gazi University</h2><span>Bsc. Industrial Engineering</span><br>
+<div class="item"><h2 class="item-title">Soochow University</h2><span>Physics</span><br>
 	
 
-	<span>2013 - 2017 | GPA: 3.35 / 4.00</span>
+	<span>2018 - 2022 | GPA: 3.54 / 4.00</span>
+
+	<p>Bachelor degree</p>
+
+
+	
 </div>
 
 </div>
 
 				
 					<div class="section section-interests"><h1 class="section-title">Interests</h1><div class="item">
-	<li>Data Science</li><li>AI Applications</li><li>Optimization Problems</li>
+	<li>Science computation</li><li>Spintronic</li><li>AI Applications</li><li>Ai for science</li>
 	</div></div>
 
 				
@@ -166,62 +179,26 @@ Nam suscipit nisi a bibendum lacinia. Donec aliquet, nibh dignissim placerat eff
 			<header class="flex-row">
 				<div class="title">
 	
-		<h1 class="name">Mert Bakir</h1>
-		<h2 class="tagline">Data Scientist</h2>
+		<h1 class="name">Zhu Mo</h1>
+		<h2 class="tagline"></h2>
+		
+			
+    <span class="contact"><a href="mailto:zm1171218417@outlook.com" class="no-external-icon"><i class="fas fa-envelope"></i> zm1171218417@outlook.com</a></span><span class="contact-links"><a href="https://gitlab.com/xbunax/" class="no-external-icon"><i class="fa-brands fa-github"></i> github</a></span>
 		
 	
 </div>
 	
 
-	<div class="title">
-	
-    <span class="contact"><i class="fas fa-tty"></i> 5070*4****<br><a href="mailto:yourmail@yourdomain" class="no-external-icon"><i class="fas fa-envelope"></i> yourmail@yourdomain</a></span>
-	</div>
+<div><img class="avatar right" src="cat.jpg"></div>
 
-			</header><div class="single-column"><div class="section section-experience"><h1 class="section-title">Experience (Cont.)</h1>
-
-
-</div>
-<div class="section section-projects"><h1 class="section-title">Projects</h1>
-<div class="item">
-	<h2 class="item-title">
-		
-		Simulated Annealing for Traveling Salesman Problem</h2>
-	<span>Some University - 2016</span>
-	
-
-	<p>Lorem ipsum dolor sit amet</p>
-
-
-	
-</div>
-
-<div class="item">
-	<h2 class="item-title">
-		
-		<a class="no-external-icon" href="https://gitlab.com/mertbakir/resume-a4">Resume - A4</a></h2>
-	<span>mertbakir.gitlab.io/resume - 2020</span>
-	
-
-	<p>Bring CI/CD to your resume using YAML and Git.&quot;</p>
-
-
-	
-	<ul>
-		<li><a href="https://gitlab.com/mertbakir/resume-a4" class="no-external-icon">Available in GitLab<i class="fab fa-gitlab"></i></a></li>
-	</ul>
-	
-</div>
-
-</div>
-<div class="section section-publications"><h1 class="section-title">Publications</h1>
+			</header><div class="single-column"><div class="section section-publications"><h1 class="section-title">Publications</h1>
 <div class="item">
 	
 	
-		<span>G. Dantzing,K. F. Sunstrider,</span>
-		<span>"Additive Outlier Detection Via Extreme-Value Theory",</span>
-		<span><i>Journal of Time Series Analysis</i>, vol. 27, pp. 29-34,</span>
-		<span>2006</span>.
+		<span>Z. Mo,</span>
+		<span>"Investigation of Spin-Transfer Torque Effect in Multilayer Mn2Au Induced by Laser-Triggered Electrical Pulses and Layer-Dependent Pulse Attenuation",</span>
+		<span><i>Apply Physic Letter (waiting)</i>, vol. 27, pp. 29-34,</span>
+		<span>2024</span>.
 </div>
 
 </div>
@@ -229,24 +206,8 @@ Nam suscipit nisi a bibendum lacinia. Donec aliquet, nibh dignissim placerat eff
 <div class="item">
 	<h2 class="item-title">
 		
-		Tübitak - Graduation Project</h2>
-	<span>A Decision Support System for 3D Cutting Problem - 2017</span>
-	
-	
-	<ul>
-		<li>This is an <a href="https://mertbakir.gitlab.io" class="no-external-icon">example<i class="fas fa-bolt"></i></a>
-		<li>omg<a href="https://esdfdsfdsf" class="no-external-icon">second link.<i class="-"></i></a></li>
-	</ul>
-	
-</div>
-
-</div>
-<div class="section section-certificates"><h1 class="section-title">Certifications</h1>
-<div class="item">
-	<h2 class="item-title">
-		
-		<a class="no-external-icon" href="https://xkcd.com/605/">Supervised Learning: Regression</a></h2>
-	<span>Coursera - 2020</span>
+		江苏省高校大学生物理与实验科技作品创新竞赛一等奖</h2>
+	<span>2019</span>
 	
 	
 </div>
@@ -254,59 +215,37 @@ Nam suscipit nisi a bibendum lacinia. Donec aliquet, nibh dignissim placerat eff
 <div class="item">
 	<h2 class="item-title">
 		
-		<a class="no-external-icon" href="https://xkcd.com/388/">Supervised Learning: Classification</a></h2>
-	<span>Coursera - 2020</span>
+		中国大学生物理学术竞赛华东赛一等奖全国赛三等奖</h2>
+	<span>2020</span>
 	
 	
 </div>
 
 </div>
-<div class="section section-interests"><h1 class="section-title">Interests</h1><div class="item">
-	<li>Data Science</li><li>AI Applications</li><li>Optimization Problems</li>
-	</div></div>
+<div class="section section-certificates"><h1 class="section-title">Campus activities</h1>
+<div class="item">
+	<h2 class="item-title">
+		
+		 班级学习委员 </h2>
+	<span>2019</span>
+	
+	
+</div>
+
+<div class="item">
+	<h2 class="item-title">
+		
+		<a class="no-external-icon" href="https://github.com/TJ-CSCCG/tongji-undergrad-thesis-typst"> 参加同济开源项目TJ-CSCCG </a></h2>
+	<span>2024</span>
+	
+	
+</div>
+
+</div>
 </div></div>
 	</main>
 	
 
-	
-	<footer>
-		
-<span class="footer-item">
-	
-	<span class="footer-link">
-		Contact me on
-		<a href="https://linkedin.com/in/mertbakir/" class="no-external-icon">
-			<span>Linkedin </span>
-			<i class="fab fa-linkedin"></i>
-		</a>
-	</span>
-	
-	<span class="footer-link">
-		Check out my
-		<a href="https://mertbakir.gitlab.io/about/" class="no-external-icon">
-			<span>Website </span>
-			<i class="fas fa-globe"></i>
-		</a>
-	</span>
-	
-</span>
-
-
-<span class="footer-item">
-	You can print this resume in A4 size or save as pdf. | Last update on 2020-09-01.
-</span>
-
-
-<span class="footer-item" id="credits">
-	<span>The open-source theme Resume-A4 is designed by</span>
-	<a href="https://gitlab.com/mertbakir/resume-A4" class="no-external-icon"><span>Mert&nbsp;Bakır</span>&nbsp;<i class="fab fa-gitlab"></i></a>
-	<br>
-	<span>and template code by</span>
-	<a href="https://gitlab.com/raphendyr/hugo-theme-resume-A4" class="no-external-icon"><span>Jaakko&nbsp;Kantojärvi</span>&nbsp;<i class="fab fa-gitlab"></i></a>
-</span>
-
-
-	</footer>
 	
 </body>
 </html>
